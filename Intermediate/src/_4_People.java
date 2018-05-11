@@ -3,16 +3,16 @@ import java.util.ArrayList;
 public class _4_People {
 
 	public static void main(String[] args) {
-		Person p1 = new Person("p1", 19, "job1");
-		Person p2 = new Person("Name1", 22, "Job Title 1");
-		Person p3 = new Person("Name2", 44, "Job Title 2");
+		_4_Person p1 = new _4_Person("p1", 19, "job1");
+		_4_Person p2 = new _4_Person("Name1", 22, "Job Title 1");
+		_4_Person p3 = new _4_Person("Name2", 44, "Job Title 2");
 
-		ArrayList<Person> people = new ArrayList<Person>();
+		ArrayList<_4_Person> people = new ArrayList<_4_Person>();
 		people.add(p1);
 		people.add(p2);
 		people.add(p3);
 
-		for (Person temp : people) {
+		for (_4_Person temp : people) {
 			System.out.println(temp);
 		}
 

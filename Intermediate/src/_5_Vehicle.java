@@ -1,30 +1,25 @@
-public class Vehicle {
+public abstract class _5_Vehicle {
 
-	private String make;
-	private String model;
-	private double price;
+	public String vehicleType;
 
-	public Vehicle(String v_make, String v_model, double v_price) {
-		make = v_make;
-		model = v_model;
-		price = v_price;
+	public Integer getNumberOfSeats() {
+		if (this.vehicleType.equals("Car")) {
+			return 5;
+		}
+		if (this.vehicleType.equals("Bus")) {
+			return 20;
+		}
+		if (this.vehicleType.equals("Motorcycle")) {
+			return 1;
+		}
+
+		return null;
 	}
 
-	public String getVehicleName() {
-		return make + " " + model;
-	}
-	
-	public double price()
-	{
-		return price;
+	public String getVehicleType() {
+		return this.vehicleType;
 	}
 
-	public String toString()
-	{
-		String result;
-		
-		result = "Vehicle Name : "+ getVehicleName() + "\nPrice : " +price;
-		return result;
-		
-	}
+	public abstract Integer getNumberOfWheels();
+
 }
